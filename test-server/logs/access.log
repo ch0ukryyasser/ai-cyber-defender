@@ -1,0 +1,143 @@
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.17.0.2:5000
+[33mPress CTRL+C to quit[0m
+2026-08-15T01:41:08.349369 | IP=172.17.0.1 | GET / | UA=PostmanRuntime/7.56.0
+172.17.0.1 - - [15/Aug/2026 01:41:08] "GET / HTTP/1.1" 200 -
+2026-08-16T22:16:34.709134 | IP=172.17.0.1 | GET / | UA=PostmanRuntime/7.56.0
+172.17.0.1 - - [16/Aug/2026 22:16:34] "GET / HTTP/1.1" 200 -
+2026-08-17T00:42:19.728987 | IP=172.17.0.1 | GET / | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:19] "GET / HTTP/1.1" 200 -
+2026-08-17T00:42:19.799650 | IP=172.17.0.1 | GET /search | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:19] "GET /search?q=python+tutorial HTTP/1.1" 200 -
+2026-08-17T00:42:19.832989 | IP=172.17.0.1 | GET /api/users/41 | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:19] "GET /api/users/41 HTTP/1.1" 200 -
+2026-08-17T00:42:20.370431 | IP=172.17.0.1 | GET / | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:20] "GET / HTTP/1.1" 200 -
+2026-08-17T00:42:20.387703 | IP=172.17.0.1 | GET /search | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:20] "GET /search?q=python+tutorial HTTP/1.1" 200 -
+2026-08-17T00:42:20.404896 | IP=172.17.0.1 | GET /api/users/78 | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:20] "GET /api/users/78 HTTP/1.1" 200 -
+2026-08-17T00:42:20.922630 | IP=172.17.0.1 | GET / | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:20] "GET / HTTP/1.1" 200 -
+2026-08-17T00:42:20.936887 | IP=172.17.0.1 | GET /search | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:20] "GET /search?q=python+tutorial HTTP/1.1" 200 -
+2026-08-17T00:42:20.948284 | IP=172.17.0.1 | GET /api/users/86 | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:20] "GET /api/users/86 HTTP/1.1" 200 -
+2026-08-17T00:42:21.475263 | IP=172.17.0.1 | GET / | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:21] "GET / HTTP/1.1" 200 -
+2026-08-17T00:42:21.486655 | IP=172.17.0.1 | GET /search | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:21] "GET /search?q=python+tutorial HTTP/1.1" 200 -
+2026-08-17T00:42:21.499265 | IP=172.17.0.1 | GET /api/users/21 | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:21] "GET /api/users/21 HTTP/1.1" 200 -
+2026-08-17T00:42:22.024023 | IP=172.17.0.1 | GET / | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:22] "GET / HTTP/1.1" 200 -
+2026-08-17T00:42:22.043595 | IP=172.17.0.1 | GET /search | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:22] "GET /search?q=python+tutorial HTTP/1.1" 200 -
+2026-08-17T00:42:22.056583 | IP=172.17.0.1 | GET /api/users/13 | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:22] "GET /api/users/13 HTTP/1.1" 200 -
+2026-08-17T00:42:22.579875 | IP=172.17.0.1 | POST /login | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:22] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-08-17T00:42:22.721647 | IP=172.17.0.1 | POST /login | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:22] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-08-17T00:42:22.844824 | IP=172.17.0.1 | POST /login | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:22] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-08-17T00:42:22.975508 | IP=172.17.0.1 | POST /login | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:22] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-08-17T00:42:23.109116 | IP=172.17.0.1 | POST /login | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:23] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-08-17T00:42:23.230989 | IP=172.17.0.1 | POST /login | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:23] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-08-17T00:42:23.346264 | IP=172.17.0.1 | POST /login | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:23] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-08-17T00:42:23.461190 | IP=172.17.0.1 | POST /login | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:23] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-08-17T00:42:23.574465 | IP=172.17.0.1 | POST /login | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:23] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-08-17T00:42:23.690581 | IP=172.17.0.1 | POST /login | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:23] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-08-17T00:42:23.816725 | IP=172.17.0.1 | POST /login | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:23] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-08-17T00:42:23.935622 | IP=172.17.0.1 | POST /login | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:23] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-08-17T00:42:24.052753 | IP=172.17.0.1 | POST /login | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:24] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-08-17T00:42:24.170454 | IP=172.17.0.1 | POST /login | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:24] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-08-17T00:42:24.288393 | IP=172.17.0.1 | POST /login | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:24] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-08-17T00:42:24.403263 | IP=172.17.0.1 | POST /login | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:24] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-08-17T00:42:24.519358 | IP=172.17.0.1 | POST /login | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:24] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-08-17T00:42:24.630414 | IP=172.17.0.1 | POST /login | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:24] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-08-17T00:42:24.746947 | IP=172.17.0.1 | POST /login | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:24] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-08-17T00:42:24.860582 | IP=172.17.0.1 | POST /login | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:24] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2026-08-17T00:42:24.975908 | IP=172.17.0.1 | GET /search | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:24] "GET /search?q='+OR+1%3D1-- HTTP/1.1" 200 -
+2026-08-17T00:42:25.192302 | IP=172.17.0.1 | GET /search | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:25] "GET /search?q='+OR+'1'%3D'1 HTTP/1.1" 200 -
+2026-08-17T00:42:25.408060 | IP=172.17.0.1 | GET /search | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:25] "GET /search?q=admin'-- HTTP/1.1" 200 -
+2026-08-17T00:42:25.622659 | IP=172.17.0.1 | GET /search | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:25] "GET /search?q=1;+DROP+TABLE+users-- HTTP/1.1" 200 -
+2026-08-17T00:42:25.838785 | IP=172.17.0.1 | GET /search | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:25] "GET /search?q=<script>alert(1)</script> HTTP/1.1" 200 -
+2026-08-17T00:42:26.054003 | IP=172.17.0.1 | GET /search | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:26] "GET /search?q=<img+src%3Dx+onerror%3Dalert(1)> HTTP/1.1" 200 -
+2026-08-17T00:42:26.270458 | IP=172.17.0.1 | GET /search | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:26] "GET /search?q=';+SELECT+*+FROM+users-- HTTP/1.1" 200 -
+2026-08-17T00:42:26.496809 | IP=172.17.0.1 | GET /search | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:26] "GET /search?q=<svg+onload%3Dalert(1)> HTTP/1.1" 200 -
+2026-08-17T00:42:26.719390 | IP=172.17.0.1 | GET /admin | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:26] "[33mGET /admin HTTP/1.1[0m" 404 -
+2026-08-17T00:42:26.848429 | IP=172.17.0.1 | GET /wp-admin | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:26] "[33mGET /wp-admin HTTP/1.1[0m" 404 -
+2026-08-17T00:42:26.965529 | IP=172.17.0.1 | GET /config | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:26] "[33mGET /config HTTP/1.1[0m" 404 -
+2026-08-17T00:42:27.092836 | IP=172.17.0.1 | GET /.env | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:27] "[33mGET /.env HTTP/1.1[0m" 404 -
+2026-08-17T00:42:27.206064 | IP=172.17.0.1 | GET /backup | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:27] "[33mGET /backup HTTP/1.1[0m" 404 -
+2026-08-17T00:42:27.318429 | IP=172.17.0.1 | GET /api/v1 | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:27] "[33mGET /api/v1 HTTP/1.1[0m" 404 -
+2026-08-17T00:42:27.440006 | IP=172.17.0.1 | GET /test | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:27] "[33mGET /test HTTP/1.1[0m" 404 -
+2026-08-17T00:42:27.567108 | IP=172.17.0.1 | GET /debug | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:27] "[33mGET /debug HTTP/1.1[0m" 404 -
+2026-08-17T00:42:27.680182 | IP=172.17.0.1 | GET /console | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:27] "[33mGET /console HTTP/1.1[0m" 404 -
+2026-08-17T00:42:27.799601 | IP=172.17.0.1 | GET /.git | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:27] "[33mGET /.git HTTP/1.1[0m" 404 -
+2026-08-17T00:42:27.924729 | IP=172.17.0.1 | GET /phpmyadmin | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:27] "[33mGET /phpmyadmin HTTP/1.1[0m" 404 -
+2026-08-17T00:42:28.047154 | IP=172.17.0.1 | GET /login.php | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:28] "[33mGET /login.php HTTP/1.1[0m" 404 -
+2026-08-17T00:42:28.164368 | IP=172.17.0.1 | GET /uploads | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:28] "[33mGET /uploads HTTP/1.1[0m" 404 -
+2026-08-17T00:42:28.290931 | IP=172.17.0.1 | GET /tmp | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:28] "[33mGET /tmp HTTP/1.1[0m" 404 -
+2026-08-17T00:42:28.426006 | IP=172.17.0.1 | GET /api/users/1 | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:28] "GET /api/users/1 HTTP/1.1" 200 -
+2026-08-17T00:42:28.544205 | IP=172.17.0.1 | GET / | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:28] "GET / HTTP/1.1" 200 -
+2026-08-17T00:42:28.572196 | IP=172.17.0.1 | GET /search | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:28] "GET /search?q=python+tutorial HTTP/1.1" 200 -
+2026-08-17T00:42:28.585809 | IP=172.17.0.1 | GET /api/users/65 | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:28] "GET /api/users/65 HTTP/1.1" 200 -
+2026-08-17T00:42:29.101132 | IP=172.17.0.1 | GET / | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:29] "GET / HTTP/1.1" 200 -
+2026-08-17T00:42:29.111925 | IP=172.17.0.1 | GET /search | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:29] "GET /search?q=python+tutorial HTTP/1.1" 200 -
+2026-08-17T00:42:29.122859 | IP=172.17.0.1 | GET /api/users/96 | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:29] "GET /api/users/96 HTTP/1.1" 200 -
+2026-08-17T00:42:29.633686 | IP=172.17.0.1 | GET / | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:29] "GET / HTTP/1.1" 200 -
+2026-08-17T00:42:29.644545 | IP=172.17.0.1 | GET /search | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:29] "GET /search?q=python+tutorial HTTP/1.1" 200 -
+2026-08-17T00:42:29.654075 | IP=172.17.0.1 | GET /api/users/40 | UA=python-requests/2.34.2
+172.17.0.1 - - [17/Aug/2026 00:42:29] "GET /api/users/40 HTTP/1.1" 200 -
