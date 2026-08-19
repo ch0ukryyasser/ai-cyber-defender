@@ -1,0 +1,4 @@
+test-server/logs/*.log
+detection/*.csv
+__pycache__/
+*.pyc
