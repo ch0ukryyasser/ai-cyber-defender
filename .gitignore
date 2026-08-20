@@ -1,4 +1,4 @@
 test-server/logs/*.log
-detection/*.csv
+*.csv
 __pycache__/
 *.pyc
