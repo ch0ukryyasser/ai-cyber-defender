@@ -5,3 +5,7 @@ __pycache__/
 .env
 
 response/incidents/
+
+node_modules/
+venv/
+dist/

@@ -1,0 +1,23 @@
+﻿services:
+  test-server:
+    build: ./test-server
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./test-server/logs:/app/logs
+
+  dashboard-api:
+    build: ./dashboard-api
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./ai-response:/ai-response
+      - ./response:/response
+      - ./detection:/detection
+
+  dashboard:
+    build: ./dashboard
+    ports:
+      - "4173:4173"
+    depends_on:
+      - dashboard-api
