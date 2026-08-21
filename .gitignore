@@ -2,3 +2,6 @@ test-server/logs/*.log
 *.csv
 __pycache__/
 *.pyc
+.env
+
+response/incidents/

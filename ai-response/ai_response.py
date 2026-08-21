@@ -108,27 +108,40 @@ Analyse cette alerte et réponds selon le format JSON demandé."""
 # ÉTAPE 4 : Niveau agent - le LLM peut appeler des outils
 # ---------------------------------------------------------------------------
 
-# --- Implémentations des outils (stubs pour l'instant) ---------------------
-# À terme : block_ip() appellera ton pare-feu / iptables / règle Docker,
-# send_alert() enverra un mail/Slack/webhook, create_ticket() créera un
-# ticket Jira/GitHub Issue. Pour l'instant on log dans la console pour
-# valider la logique de l'agent.
+# --- Connexion aux vraies implémentations (Phase 4) ------------------------
+
+import sys
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from response.block_ip import block_ip as real_block_ip
+from response.discord_alert import send_alert as real_send_alert
+from response.generate_report import generate_report
+
+# Stocke l'alerte en cours pour que send_alert() puisse retrouver l'IP source
+# (le schéma d'outil de l'agent ne transmet que "message" et "severity")
+_current_alert = {}
+
 
 def block_ip(ip: str, reason: str) -> str:
+    real_block_ip(ip, reason=reason)
     print(f"[ACTION] block_ip appelé -> IP={ip} | raison: {reason}")
-    # TODO Phase 4/5 : intégrer un vrai blocage (iptables, règle Docker, WAF...)
-    return f"IP {ip} bloquée avec succès (simulation)."
+    return f"IP {ip} bloquée avec succès et ajoutée à la liste noire."
 
 
 def send_alert(message: str, severity: str) -> str:
+    ip = _current_alert.get("source_ip", "inconnue")
+    real_send_alert(ip=ip, attack_type=severity.upper(), details=message)
     print(f"[ACTION] send_alert appelé -> [{severity.upper()}] {message}")
-    # TODO Phase 4/5 : intégrer Slack webhook / email / SMS
-    return "Alerte envoyée avec succès (simulation)."
+    return "Alerte envoyée avec succès sur Discord."
 
 
 def create_ticket(title: str, description: str, priority: str) -> str:
     print(f"[ACTION] create_ticket appelé -> [{priority}] {title}\n         {description}")
-    # TODO Phase 4/5 : intégrer GitHub Issues API ou Jira
+    # Reste simulé pour l'instant : intégration GitHub Issues/Jira prévue en Phase 5/6
     return "Ticket créé avec succès (simulation), ID=TICKET-0001."
 
 
@@ -231,7 +244,8 @@ Analyse cette alerte et prends les actions appropriées."""
     ]
     actions_taken = []
     final_text = ""
-
+    _current_alert.clear()
+    _current_alert.update(alert)
     for _ in range(max_turns):
         response = client.chat.completions.create(
             model=MODEL,
@@ -273,7 +287,13 @@ Analyse cette alerte et prends les actions appropriées."""
                 "name": fn_name,
                 "content": str(result_text),
             })
-
+    if actions_taken:
+        generate_report(
+            ip=alert.get("source_ip", "inconnue"),
+            attack_type=alert.get("pattern_detected", "inconnu"),
+            details=final_text.strip() or "Voir actions exécutées.",
+            blocked=any(a["tool"] == "block_ip" for a in actions_taken),
+        )
     return {
         "reasoning": final_text.strip(),
         "actions_taken": actions_taken,
